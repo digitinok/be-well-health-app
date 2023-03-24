@@ -60,10 +60,10 @@ export default ({userWeight, userhight}) => {
 
     layout={{
       xaxis: {
-        title: 'Height [cm]',
+        title: 'Weight [kg]',
       },
       yaxis: {
-        title: 'Weight [kg]',
+        title: 'Height [cm]',
       },
       font: {
         family: 'Arial',
