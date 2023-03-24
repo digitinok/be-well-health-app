@@ -73,7 +73,7 @@ export default ({userWeight, userhight}) => {
       width: 960,
       height: 720,
       title: 'Body-Mass-Index Chart',
-      colorscale: {['one','two']},
+      //colorscale: {['one','two']},
 
     }}
   />
