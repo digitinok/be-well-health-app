@@ -1,5 +1,17 @@
 import DynamicPlot from "../components/DynamicPlot"
 
+let calcBMI =(Weight, height) => {
+  // prevent submitting event. prevent Default{}
+    if (weight===0 || height===0) {
+      alert ("please enter a valid weight and height")
+      
+    }
+  else{
+    return (weight/(height/100)**2).toFixed(2)
+    
+  }
+}
+
 export default function bmi() {
 
   
@@ -10,9 +22,9 @@ export default function bmi() {
           <input type="text" />
           <p>Weight (in Kg)</p>
           <input type="text"/>
-          
+          <p></p>
           <DynamicPlot />
 
-        </div>
-    );
-  }
+    </div>
+  );
+}
