@@ -1,3 +1,5 @@
+import React from 'react';
+
 // add bootstrap css 
 import 'bootstrap/dist/css/bootstrap.css'
 // own css files here
@@ -5,6 +7,7 @@ import "../styles/global.css"
 // import components
 import Layout from "../components/layout"
 import Head from "next/head";
+import NavbarBootstrap from '../components/navbar';
 
 export default function App({Component, pageProps}) {
   return (
@@ -19,5 +22,7 @@ export default function App({Component, pageProps}) {
         <Component {...pageProps}/>
       </Layout>
     </>
+
   );
 }
+

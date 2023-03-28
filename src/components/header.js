@@ -1,6 +1,10 @@
+import React from "react";
 
-export default function Header() {
+
+ function Header() {
     return (
-        <header>Health App Header</header>
+        <header>Experience Be Well</header>
     )
 }
+
+export default Header;
