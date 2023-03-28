@@ -1,3 +1,5 @@
+import DynamicPlot from "../components/DynamicPlot"
+
 let calcBMI =(Weight, height) => {
   // prevent submitting event. prevent Default{}
     if (weight===0 || height===0) {
@@ -11,19 +13,17 @@ let calcBMI =(Weight, height) => {
 }
 
 export default function bmi() {
-  return (
-    <div>
-      <h1>BMI Calculator</h1>
-      <p>Height (in cm)</p>
-      <input type="text" />
-      <p>Weight (in Kg)</p>
-      <input type="text" />
-      
-      
-      
 
-
-
+  
+    return (
+        <div>
+          <h1>BMI Calculator</h1>
+          <p>Height (in cm)</p>
+          <input type="text" />
+          <p>Weight (in Kg)</p>
+          <input type="text"/>
+          <p></p>
+          <DynamicPlot />
 
     </div>
   );
